@@ -1,0 +1,4 @@
+body {
+  @apply bg-blueblack1 text-bluegrey3;
+  font-family: 'Poppins', sans-serif;
+}
