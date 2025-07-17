@@ -2,6 +2,7 @@ import { Button, Divider } from "@mantine/core";
 import { IconArrowLeft } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import JobDesc from "../Components/JobDesc/JobDesc";
+import { jobList } from "../Components/Data/JobsData";
 
 const JobDescPage = () => {
   return (
@@ -13,11 +14,9 @@ const JobDescPage = () => {
         </Button>
       </Link>
       <div className="flex gap-5">
-        <JobDesc />
-
-        
-        </div>
-        </div>
+        <JobDesc job={jobList[0]} />
+      </div>
+    </div>
   )
 }
 export default JobDescPage;
