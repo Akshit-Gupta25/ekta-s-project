@@ -23,8 +23,8 @@ const JobCard = (props: any) => {
               alt={`${props.company} logo`}
               className="w-12 h-12 object-contain"
             />
-          </div>
-          <div className="flex flex-col w-full">
+                </div>
+                <div className="flex flex-col w-full">
             <div className="font-bold text-lg text-white w-fit">{props.jobTitle}</div>
             <div className="text-xs text-bluegrey2">
               {props.company} &#x2022; {props.applicants} Applicant
@@ -57,7 +57,7 @@ const JobCard = (props: any) => {
       {/* Bottom: Salary and Time */}
       <div className="flex justify-between items-center z-10 relative">
         <div className="font-bold text-bluegrey1 text-base">
-          &#8377; {props.salary}
+            &#8377; {props.salary} 
         </div>
         <div className="flex gap-1 text-xs text-bluegrey2 items-center">
           <IconClockHour3 className="h-5 w-5" stroke={1.5} /> {props.postedDaysAgo} days ago
@@ -66,5 +66,5 @@ const JobCard = (props: any) => {
     </Link>
   );
 };
-
+    
 export default JobCard;
